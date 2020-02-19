@@ -25,7 +25,6 @@ pipeline {
               bat 'gradle sonarQube'
             }
 
-            waitForQualityGate true
           }
         }
 
@@ -35,6 +34,12 @@ pipeline {
           }
         }
 
+      }
+    }
+
+    stage('Deployement') {
+      steps {
+        bat 'gradle publish'
       }
     }
 
