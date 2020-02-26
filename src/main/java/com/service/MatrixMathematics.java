@@ -15,6 +15,9 @@ public class MatrixMathematics {
 			throw new NoSquareException("matrix need to be square.");
 		if (matrix.size() == 1){
 			return matrix.getValueAt(0, 0);
+			
+			
+			
 		}
 			
 		if (matrix.size()==2) {
