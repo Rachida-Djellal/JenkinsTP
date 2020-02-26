@@ -5,24 +5,19 @@ import com.model.Matrix;
 
 public class MatrixMathematics {
 
-	/**
-	 * This class a matrix utility class and cannot be instantiated.
-	 */
+	
 	private MatrixMathematics(){}
 	
 	
-	/**
-	 * Determinant of a square matrix
-	 * The following function find the determinant in a recursively. 
-	 * @param matrix
-	 * @return
-	 * @throws NoSquareException
-	 */
+	
 	public static double determinant(Matrix matrix) throws NoSquareException {
 		if (!matrix.isSquare())
 			throw new NoSquareException("matrix need to be square.");
 		if (matrix.size() == 1){
 			return matrix.getValueAt(0, 0);
+			
+			
+			
 		}
 			
 		if (matrix.size()==2) {
